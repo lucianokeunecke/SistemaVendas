@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SistemaVendas.Models;
 
 namespace SistemaVendas.Data
 {
@@ -9,5 +10,6 @@ namespace SistemaVendas.Data
             : base(options)
         {
         }
+        public DbSet<SistemaVendas.Models.Produto> Produto { get; set; } = default!;
     }
 }

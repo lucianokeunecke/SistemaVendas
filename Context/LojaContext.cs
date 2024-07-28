@@ -5,7 +5,7 @@ namespace SistemaVendas.Context
 {
     public class LojaContext : DbContext
     {
-        public DbSet<Produto>Produto { get; set; } 
+        public DbSet<Produto>Produto { get; set; }
 
     }
 }

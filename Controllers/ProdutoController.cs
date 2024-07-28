@@ -11,7 +11,7 @@ namespace SistemaVendas.Controllers
         // GET: ProdutoController
         public ActionResult Index()
         {
-            return View();
+            return View(db.Produto.ToList());
         }
 
         // GET: ProdutoController/Details/5
