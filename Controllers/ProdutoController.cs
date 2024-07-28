@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SistemaVendas.Context;
 
 namespace SistemaVendas.Controllers
 {
     public class ProdutoController : Controller
     {
+        private LojaContext db = new LojaContext();
+
         // GET: ProdutoController
         public ActionResult Index()
         {
